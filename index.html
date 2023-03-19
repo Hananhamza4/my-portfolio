@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hananmangalath - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Hanan M 
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          hananhamza404@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +918848676842
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#projects">Projects</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#skills">Skills</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.gifer.com/6FNX.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Hanan M! 
+          </h1>
+          <p>
+            Hi, I'm  a web developer with 1 year of experience. Currently, I work at Trea Devs, where I am responsible for designing and developing websites and web applications. In my role at Trea Devs, I collaborate with clients across a variety of industries to create customized digital solutions that meet their unique needs. I take pride in delivering high-quality work that exceeds expectations and drives measurable results.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/django-13-1175187.png?f=webp&w=128"/>
+          <h6>Djnago</h6>
+          <p>1 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="https://st.depositphotos.com/1056394/1746/v/950/depositphotos_17462319-stock-illustration-vector-cloud-computing-and-applications.jpg"/>
+          <h6>Cloud Computing</h6>
+          <p>1 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="https://info-comp.ru/wp-content/uploads/images/stories/kartinki2/What_is_SQL_1.jpg"/>
+          <h6>Sql</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects-card" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Online Course App</h3>
+            <ul>
+              <li>Developed an online course app with a backend Django is a web application designed to offer online courses to students.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Stay up-to-date with the latest technologies: Technology is constantly evolving, and as a web developer, it's important to stay current with the latest advancements. Make sure to keep yourself informed about new tools, frameworks, and programming languages.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Hanan has been an awesome experience. 
+          She is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need her expertise I would definitely want to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Hanan during the initial phase of our venture which needed Web development. 
+          She is a committed resource who has in depth knowledge about the domain. 
+          She will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
